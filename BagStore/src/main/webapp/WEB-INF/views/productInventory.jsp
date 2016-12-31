@@ -1,9 +1,28 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ include file="/WEB-INF/views/template/header.jsp"%>
+<head>
+<style>
+h1 {
+    color:yellow;
+}
+table, td, th {
+    border: 1px solid black;
+}
 
+table {
+    width: 100%;
+}
 
-<script>
+th {
+    text-align: left;
+}
+td{color:white;
+}
+</style>
+</head>
+
+<!-- <script>
 	$(document).ready(
 			function() {
 
@@ -13,17 +32,14 @@
 									[ 1, 2, 3, 5, 10, "All" ] ]
 						});
 			});
-</script>
+</script> -->
 
 <div class="container-wrapper">
 	<div class="container">
 		<div class="page-header">
-			<h1>Product  Page</h1>
-
-
-			<p class="lead">This is the product page:</p>
-
-			<table class="table table-striped table-hover" >
+			<h1>Update Stock  Info Here!!!</h1>
+			<br>
+			<table class="table" >
 				<thead>
 					<tr class="bg-success">
 						<th>Proto Thumb</th>

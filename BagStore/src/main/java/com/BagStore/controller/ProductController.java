@@ -35,7 +35,7 @@ System.out.println("---------------------------"+products.get(0).getProductId())
 	}
 
 	@RequestMapping("/viewProduct/{productId}")
-	public String viewProduct(@PathVariable int productId, Model model) throws IOException {
+	public String viewProduct(@PathVariable("productId") int productId, Model model) throws IOException {
 		Product product = productService.getProductById(productId);
 		model.addAttribute("product", product);
 
@@ -48,7 +48,7 @@ System.out.println("---------------------------"+products.get(0).getProductId())
 		model.addAttribute("products", products);
 		model.addAttribute("searchCondition", searchCondition);
 System.out.println("in prod list view all");
-		return "searchCondition";
+		return "productList";
 	}
 
 } // The End of Class;

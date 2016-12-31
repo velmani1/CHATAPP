@@ -1,21 +1,6 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@ include file="/WEB-INF/views/template/header.jsp"%>
-<!-- <marquee bgcolor="pink" direction="right" scrollamount="10" width="100%" -->
-<!-- 	height="40"> exclusive shopping all branded bags and trolleys -->
-<!-- 	only on travelers world! </marquee> -->
-<!-- 	<br> -->
-<%-- <iframe src="<c:url value="/resources/images/giphy (1).gif"/>"
-	scrolling="auto" style="width: 700px; height: 300px;"> </iframe>
-<align=left><marquee bgcolor="orange" direction="up" scrollamount="5" width="30%"
-	height="500">
-	<center>
-		<h3>Brands Available</h3>
-	</center>
-	<center>American traveler</center>
-	<center>Samsonite</center>
-	<center>Fyntake</center>
-</marquee></align>
-<br> --%>
+
 <!--  class="giphy-embed" allowFullScreen> -->
 
 <!-- Carousel

@@ -40,7 +40,7 @@ public class CartResources {
 
     @RequestMapping(value = "/add/{productId}", method = RequestMethod.PUT)
     @ResponseStatus(value = HttpStatus.NO_CONTENT)
-    public void addItem (@PathVariable(value = "productId") int productId, @AuthenticationPrincipal User activeUser){
+    public void addItem (@PathVariable(value = "productId") int productId, @AuthenticationPrincipal User activeUser ){
         Customer customer = customerService.getCustomerByUsername(activeUser.getUsername());
         Cart cart = customer.getCart();
         Product product = productService.getProductById(productId);
@@ -68,7 +68,6 @@ public class CartResources {
     @RequestMapping(value = "/remove/{productId}", method = RequestMethod.DELETE)
     @ResponseStatus(value = HttpStatus.NO_CONTENT)
     public void removeItem(@PathVariable(value = "productId") int productId){
-    	System.out.println("remove");
         CartItem cartItem = cartItemService.getCartItemByProductId(productId);
         cartItemService.removeCartItem(cartItem);
 
@@ -87,11 +86,11 @@ public class CartResources {
 
     }
 
-    @ExceptionHandler(Exception.class)
-    @ResponseStatus(value = HttpStatus.INTERNAL_SERVER_ERROR, reason = "Internal Server Error")
-    public void handleServerErrors (Exception ex){
-
-    }
+//    @ExceptionHandler(Exception.class)
+//    @ResponseStatus(value = HttpStatus.INTERNAL_SERVER_ERROR, reason = "Internal Server Error")
+//    public void handleServerErrors (Exception ex){
+//
+//    }
 
 
 } // The End of Class;

@@ -5,6 +5,9 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
+
+import org.hibernate.validator.constraints.NotEmpty;
+
 import java.io.Serializable;
 
 @Entity
@@ -17,17 +20,21 @@ public class BillingAddress implements Serializable{
     @Id
     @GeneratedValue
     private int billingAddressId;
-
+    //@NotEmpty (message ="provide billing Address")
     private String streetName;
+    //@NotEmpty (message ="provide billing Address")
     private String apartmentNumber;
+    //@NotEmpty (message ="provide billing Address")
     private String city;
+    //@NotEmpty (message ="provide billing Address")
     private String state;
+    //@NotEmpty (message ="provide billing Address")
     private String country;
+    //@NotEmpty (message ="provide billing Address")
     private String zipCode;
 
     @OneToOne
     private Customer customer;
-
     public int getBillingAddressId() {
         return billingAddressId;
     }

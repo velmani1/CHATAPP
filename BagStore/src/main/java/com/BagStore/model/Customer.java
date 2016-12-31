@@ -17,17 +17,18 @@ public class Customer implements Serializable{
     @GeneratedValue
     private int cutomerId;
 
-    @NotEmpty (message = "The customer name must not be null")
+    @NotEmpty (message = "The customer name must not be empty")
     private String customerName;
 
-    @NotEmpty (message = "The customer email must not be null")
+    @NotEmpty (message = "The customer email must not be empty")
     private String customerEmail;
+    @NotEmpty (message = "The customer mobile nymber must not be empty")
     private String customerPhone;
 
-    @NotEmpty (message = "The customer username must not be null")
+    @NotEmpty (message = "The customer username must not be empty")
     private String username;
 
-    @NotEmpty (message = "The customer password must not be null")
+    @NotEmpty (message = "The customer password must not be empty")
     private String password;
 
     private boolean enabled;

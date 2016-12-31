@@ -2,7 +2,29 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ include file="/WEB-INF/views/template/header.jsp"%>
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<head>
+<style>
+table, td, th {
+    border: 1px solid black;
+}
 
+table {
+    width: 100%;
+}
+
+th {
+    text-align: left;
+}
+td{color:white;
+}
+.lead{color:green}
+h1 {
+    color: maroon;
+}
+}
+
+</style>
+</head>
 <!-- <script>
 	$(document).ready(
 			function() {
@@ -33,7 +55,7 @@
 
 <div class="container-wrapper">
 	<div class="container">
-		<div class="page-header">
+		<div class="well">
 			<h1>All Products</h1>
 
 			<p class="lead">Checkout all the awesome products available now!</p>
@@ -42,7 +64,8 @@
 <div data-ng-controller="proCtrl">
 <body>
 <p>Search product:<input type="next" ng-model="searchkeyword"></p>
-		<table class="table table-striped table-hover">
+<br>
+		<table class="table">
 		
 			<thead>
 				<tr class="bg-success">

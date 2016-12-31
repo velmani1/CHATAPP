@@ -11,7 +11,7 @@ cartApp.controller("cartCtrl", function($scope, $http){
 
     $scope.clearCart = function(){
     	alert('clear');
-        $http({method:'DELETE',url:'/BagStore/rest/cart/' + $scope.cartId}).success($scope.refreshCart());
+        $http({method:'DELETE',url:'/BagStore/rest/cart/'+ $scope.cartId}).success($scope.refreshCart());
     };
 
     $scope.initCartId = function(cartId){
@@ -28,12 +28,11 @@ cartApp.controller("cartCtrl", function($scope, $http){
     };
 
     $scope.removeFromCart = function(productId){
-    	alert('hi');
-    	$http({method:'DELETE',url:'/BagStore/rest/cart/remove/' + productId}).success(function(){
+    	$http({method:'DELETE',url:'/BagStore/rest/cart/remove/' + productId}).success(function(data){
     		$scope.refreshCart();
-    	
+    		alert('delete?');
     	    	}).error(function(data,status,responser){
-    	            alert("why");
+    	            alert("couldn't delete");
     	});
     
     };

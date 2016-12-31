@@ -10,7 +10,7 @@
           	<style>
       body {
         font-family: 'Tangerine', monotype corsiva;
-        font-size: 55px;
+        font-size: 70px;
    background: url("<c:url value="/resources/images/cartt.jpg"/>") no-repeat;
    background-attachment: fixed;
    background-size: cover;
@@ -29,13 +29,10 @@
 <title>Travelers World</title>
 
 <!-- Angular.JS -->
-<link href="<c:url value="/resources/js/angular.min.js" />"
-	rel="stylesheet">
+<script type="text/javascript" src="<c:url value="/resources/js/angular.min.js"/>"></script>
 <!-- JQuery -->
-<link href="<c:url value="/resources/js/jquery.min.js" />"
-	rel="stylesheet">
-<link href="<c:url value="/resources/js/bootstrap.min.js" />"
-	rel="stylesheet">
+<script src="<c:url value="/resources/js/jquery.min.js" />"></script>
+<script src="<c:url value="/resources/js/bootstrap.min.js" />"></script>
 
 <script	src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
 

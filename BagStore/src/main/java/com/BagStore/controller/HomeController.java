@@ -47,11 +47,5 @@ public class HomeController {
     public String crud(){
         return "admin";
     }
-   /* @RequestMapping("success")
-    public String order(){
-    	System.out.println("hii..");
-        return "success";
-    }
-*/
-
+   
 } // The End of Class;
